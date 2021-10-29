@@ -5,18 +5,28 @@ import { getAuth, signInWithPopup,signOut,onAuthStateChanged, GoogleAuthProvider
 
 initializedAuthentication()
 const useFirebase=()=>{
-    const [user,setUser]=useState();
+    const [user,setUser]=useState({});
+    const[error,setError]=useState('');
+    const [isLogin,setIsLogin]=useState(null)
 
     const auth = getAuth();
     const provider = new GoogleAuthProvider();
 
 
     const signInWithGoogle=()=>{
-        signInWithPopup(auth, provider)
-        .then(result=>{
-            setUser(result)
+        return signInWithPopup(auth, provider)
+        .catch((error)=>{
+            setError(error.massage)
         })
 
+    }
+    const isLogup=()=>{
+        const user = auth.currentUser;
+        if(user!==null){
+            setIsLogin(isLogin)
+        }else{
+
+        }
     }
 
     const logout=()=>{
@@ -39,7 +49,8 @@ const useFirebase=()=>{
     return{
         user,
         signInWithGoogle,
-        logout
+        logout,
+        isLogup
     }
 
 
