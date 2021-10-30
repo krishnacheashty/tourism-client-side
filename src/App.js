@@ -8,7 +8,6 @@ import {
 import Home from './pages/Home/Home/Home';
 import MyOrder from './pages/Home/MyOrder/MyOrder';
 import ManageAllSerVice from './pages/Home/Manageallservice/ManageAllSerVice';
-import AboutUs from './pages/Home/AboutUs/AboutUs';
 import AddANewService from './pages/Home/AddNewService/AddANewService';
 import UpComingEvents from './pages/Home/Upcoming/UpComingEvents';
 import PageNotFound from './pages/Home/Home/PageNotFound/PageNotFound';
@@ -16,6 +15,7 @@ import { Container } from 'react-bootstrap';
 import BannerTop from './pages/Home/Banner/BannerTop';
 import PrivateRoute from './pages/privateRoute/PrivateRoute';
 import Login from './pages/Home/login/Login';
+import PlaceOrder from './pages/Home/AboutUs/PlaceOrder';
 
 
 
@@ -44,8 +44,8 @@ function App() {
               <ManageAllSerVice></ManageAllSerVice>
             </PrivateRoute>
 
-            <PrivateRoute path='/aboutUs'>
-              <AboutUs></AboutUs>
+            <PrivateRoute path='/placeOrder/:serviceId'>
+              <PlaceOrder></PlaceOrder>
             </PrivateRoute>
 
             <PrivateRoute path='/AddANewService'>

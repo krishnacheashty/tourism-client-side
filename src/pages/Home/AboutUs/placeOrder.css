@@ -1,0 +1,23 @@
+.from-container{
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+     
+}
+
+.div-from{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 24%;
+    
+    
+
+}
+.from-container input,textarea{
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.103)
+}
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
