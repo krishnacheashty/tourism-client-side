@@ -50,7 +50,8 @@ const useFirebase=()=>{
         user,
         signInWithGoogle,
         logout,
-        isLogup
+        isLogup,
+        error
     }
 
 

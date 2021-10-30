@@ -4,6 +4,9 @@ import { useForm } from "react-hook-form";
 import './placeOrder.css'
 import useAuth from '../../Hooks/useAuth';
 import { Container } from 'react-bootstrap';
+import * as axios from 'axios';
+
+
 
 const PlaceOrder = () => {
     const{user}=useAuth()
@@ -17,11 +20,20 @@ const PlaceOrder = () => {
            console.log(data);
            setService(data)
        })
-   },[]);
+   },[serviceId]);
 
     const{name,picture,discription}=service
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const { register, handleSubmit,reset } = useForm();
+    const onSubmit = data => {
+        console.log(data)
+        axios.post('http://localhost:5000/order',data)
+        .then(result=>{
+            if(result){
+                alert("you are successfully add you event")
+            }
+            reset('')
+        })
+    };
      
 
     return (
@@ -44,10 +56,11 @@ const PlaceOrder = () => {
                 <input placeholder="Your Address" {...register("address", { required: true })} />
 
                 <input placeholder="Phone Number " {...register("number",{ required: true })} />
-                <input defaultValue={picture}  {...register("image url",{ required: true })} />
+                <input defaultValue={picture}  {...register("image_url",{ required: true })} />
                 
                 
-                <input type="submit" /><span><small> 3 time click on submit to see your product in your order page.</small></span>
+                <input type="submit" />
+                <span><small> 3 time click on submit to see your product in your order page.</small></span>
                 </form>
                 
             </div>

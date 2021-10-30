@@ -2,7 +2,7 @@ import React from 'react';
 import useAuth from '../../Hooks/useAuth';
 import {useLocation,useHistory} from 'react-router'
 const Login = () => {
-    const {user,signInWithGoogle,logout}=useAuth();
+    const {user,signInWithGoogle}=useAuth();
     console.log(user);
 
     const location=useLocation();

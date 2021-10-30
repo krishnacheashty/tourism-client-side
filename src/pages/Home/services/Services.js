@@ -14,6 +14,7 @@ const Services = () => {
     },[])
     return (
         <div>
+            <h2>Our Present Events</h2>
             <Row xs={1} md={3} className="g-4">
 
                 {
