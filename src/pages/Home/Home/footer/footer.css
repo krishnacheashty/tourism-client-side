@@ -1,0 +1,33 @@
+.footer-container{
+    height: 10vh;
+    
+    background-color: rgba(172, 67, 48, 0.883);
+}
+.footer-main{
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.logo-2{
+    
+    width:150px;
+    height: auto;
+    margin-right: 50px;
+    
+    
+}
+.text-about{
+    text-align: start;
+    margin-top: 5px;
+}
+.text-menu{
+    margin-top:50% ;
+}
+.footer-bottom{
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    font-weight: 700;
+}

@@ -12,9 +12,9 @@ const PlaceOrder = () => {
     const{user}=useAuth()
    const{serviceId}=useParams();
    const[service,setService]=useState({})
-
+   
    useEffect(()=>{
-       fetch(`http://localhost:5000/services/${serviceId}`)
+       fetch(`https://powerful-bastion-27385.herokuapp.com/services/${serviceId}`)
        .then(res=>res.json())
        .then(data=>{
            console.log(data);
@@ -26,7 +26,7 @@ const PlaceOrder = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/order',data)
+        axios.post('https://powerful-bastion-27385.herokuapp.com/order',data)
         .then(result=>{
             if(result){
                 alert("you are successfully add you event")
