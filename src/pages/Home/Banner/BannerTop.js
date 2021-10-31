@@ -3,14 +3,14 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../Hooks/useAuth';
-import logo from '../../../image-2/logos/bonnerlogo/logo@2x_white.png'
+import logo from '../../../image-2/logos/bannerlogo/logo@2x_white.png'
 const BannerTop = () => {
     const{isLogup,user,logout}=useAuth()
     return (
         <div>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                <Navbar.Brand href="#home"><img src={logo} alt="" /></Navbar.Brand>
+                <Navbar.Brand href="#home"><img src={logo} alt="logo" /></Navbar.Brand>
                 <Nav className="me-auto">
                 <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
                 <Nav.Link as={HashLink} to="/myOrder#myOrder">My Order</Nav.Link>
