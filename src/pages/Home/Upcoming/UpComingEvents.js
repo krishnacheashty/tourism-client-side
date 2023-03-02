@@ -10,7 +10,7 @@ import logo6 from "../../../image-2/logo6.png"
 const UpComingEvents = () => {
     return (
         <div>
-            <h2>Our Up-Coming Events</h2>
+            <h2 className='mt-5 mb-5'>Our Up-Coming Events</h2>
            <Row xs={1} md={2} className="g-4">
                 
                 <Col>

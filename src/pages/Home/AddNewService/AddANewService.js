@@ -8,7 +8,7 @@ const AddANewService = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post("https://powerful-bastion-27385.herokuapp.com/services",data)
+        axios.post("https://tourism-server-side-l69j.onrender.com/services",data)
         .then(result=>{
             if(result){
                 alert("your event is updated successfully.")

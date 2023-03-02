@@ -14,7 +14,7 @@ const PlaceOrder = () => {
    const[service,setService]=useState({})
    
    useEffect(()=>{
-       fetch(`https://powerful-bastion-27385.herokuapp.com/services/${serviceId}`)
+       fetch(`https://tourism-server-side-l69j.onrender.com/services/${serviceId}`)
        .then(res=>res.json())
        .then(data=>{
            console.log(data);
@@ -26,7 +26,7 @@ const PlaceOrder = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('https://powerful-bastion-27385.herokuapp.com/order',data)
+        axios.post('https://tourism-server-side-l69j.onrender.com/order',data)
         .then(result=>{
             if(result){
                 alert("you are successfully add you event")

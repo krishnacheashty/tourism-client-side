@@ -8,13 +8,13 @@ import Service from '../services/Service/Service';
 const Services = () => {
     const [services,setServices]=useState([]);
     useEffect(()=>{
-        fetch('https://powerful-bastion-27385.herokuapp.com/services')
+        fetch('https://tourism-server-side-l69j.onrender.com/services')
         .then(res=>res.json())
         .then(data=>setServices(data))
     },[])
     return (
         <div>
-            <h2>Our Present Events</h2>
+            <h2 className='mt-5 mb-5'>Our Present Events</h2>
             <Row xs={1} md={3} className="g-4">
 
                 {

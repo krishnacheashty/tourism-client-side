@@ -1,6 +1,5 @@
 .footer-container{
     height: 10vh;
-    
     background-color: rgba(172, 67, 48, 0.883);
 }
 .footer-main{
@@ -23,6 +22,9 @@
 }
 .text-menu{
     margin-top:50% ;
+}
+.text-menu-1{
+    margin-top:5rem;
 }
 .footer-bottom{
     background: #9D50BB;  /* fallback for old browsers */

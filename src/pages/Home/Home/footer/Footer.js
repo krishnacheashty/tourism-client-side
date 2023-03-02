@@ -7,13 +7,13 @@ const Footer = () => {
         <div>
             <Container>
             <Row className=" footer-container">
-                <h1 >.  .  .</h1>
+                <h1 className='mx-5'>.  .  .</h1>
             </Row>
             </Container>
             <Container>
                 <Row className="footer-main">
                     <Col xs={6} md={4} >
-                    <img className="logo-2 " src={logo} alt="logo" />
+                    <img className="logo-2 text-menu-1 " src={logo} alt="logo" />
                         <ul className="mt-3">
                             <h4 className='text-about'>About Us</h4>
                             <li className='text-about' > Our Team</li>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </Col>
                     <Col xs={6} md={4}>
                       
-                        <h4 className='mt-5'>Address</h4>
+                        <h4 className='text-menu-1'>Address</h4>
                         <p>Dhandomdi-1/5,Dhaka,Bangladesh</p>
                         <p>phone:0987123</p>
                     </Col>

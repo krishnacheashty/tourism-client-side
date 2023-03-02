@@ -5,13 +5,13 @@ const MyOrder = () => {
     
     const[events,setEvents]=useState([])
     useEffect(()=>{
-        fetch('https://powerful-bastion-27385.herokuapp.com/order')
+        fetch('https://tourism-server-side-l69j.onrender.com/order')
         .then(res=>res.json())
         .then(data =>setEvents(data))
     },[])
     // console.log(events)
     const handelDelete=(id)=>{
-        fetch(`https://powerful-bastion-27385.herokuapp.com/order/${id}`,
+        fetch(`https://tourism-server-side-l69j.onrender.com/order/${id}`,
         {method:"DELETE"
     })
     .then(res=>res.json())
